@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            background-image: url('laptop stand/_f85411ac-74e3-445a-addf-32591a1b4a67.jpeg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+            0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+            0 0 20px rgb(255, 0, 0), /* Pink shadow */
+            0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+                
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home<i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">Radeon</span> 
+                    <span class="hover-effect">16gigs</span> 
+                </h2>
+                <div>
+                <button class="add-to-cart" data-name="Laptop Stand" data-price="25" >Add to Cart</button>
+                </div>    
+            </div>
+            <button id="prevButton" class="slideshow-button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                
+                <div class="slides-container">
+                    <img src="laptop stand/a GPU with a neo red and black color scheme on a white background.png" alt="Slide 1">
+                    
+                    
+                    <!-- Add more images as needed -->
+                </div>
+                
+                
+            </div>
+            <button id="nextButton" class="slideshow-button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+        
+
+        <section id="intro" >
+            <div>
+                <h1>🎮 Unleash Power: High-Performance GPUs</h1>
+                <p>🌟 Take your visuals to the next level with our advanced Graphics Processing Units (GPUs) – the ultimate combination of raw power, cutting-edge technology, and stunning design for every gaming and creative need. 🖥️</p>
+                <p>🚀 Dominate your games with ultra-smooth frame rates, breathtaking visuals, and real-time ray tracing. Our GPUs deliver unparalleled performance, ensuring you experience every detail with stunning clarity, whether you're gaming in 4K or diving into VR worlds. 🎮</p>
+                <p>💡 Built for creators, our GPUs accelerate rendering, video editing, and 3D modeling with lightning-fast processing and AI-enhanced workflows. From professionals to enthusiasts, our GPUs empower you to create without limits. 🎨</p>
+                <p>🔒 Engineered for reliability, our GPUs feature advanced thermal solutions, robust build quality, and intelligent power management. Play, create, and perform without compromise, knowing your hardware is designed to last. ❄️</p>
+                <p>🌐 Experience the perfect blend of power and precision, designed to meet the demands of modern computing. Elevate your setup and embrace the future of graphics with our high-performance GPUs. 🌟</p>
+                <p>🚀 Unleash your potential. Power your passion. Choose our cutting-edge GPUs today. 🎮</p>
+            </div>
+            
+            
+            
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product1.js"></script>
+    <script src="review.js"></script>
+    <section>
+
+        <p style="text-align: center;">&copy; 2024 BMR Store. All rights reserved.</p>
+
+        
+    </section>
+    
+    
+</body>
+
+</html>

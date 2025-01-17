@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url(hardware/minimalistic\ and\ black\ lines.png);
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or support, please feel free to contact us:</p>
+            <ul>
+                <li>Email: buildmyrig108108@gmail.com</li>
+                <li>Phone: (+91) 9638953206</li>
+                <li>Address: 123 Tech Street, Cityville, India</li>
+            </ul> </section>
+
+        <section id="products">
+            <!-- Your product listings -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BMR Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include the cart.js file -->
+    <script src="cart.js" defer></script>
+    <script src="product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLEVER</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url(hardware/minimalistic\ and\ black\ lines.png);
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+          0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+            0 0 20px rgb(255, 0, 0), /* Pink shadow */
+            0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home <i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">Welcome</span> 
+                    <span class="hover-effect">to</span> 
+                    <span class="hover-effect">Build My Rig</span>
+                  </h2>
+            
+            </div>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                <div class="slides-container">
+                    <img src="hardware/a gaming motherboard stand in neo red and black on a white background.png" alt="Slide 1">
+                    <img src="hardware/a gaming motherboard stand in white background.png" alt="Slide 2">
+                    <img src="hardware/a GPU with a neo red and black color scheme on a white background.png" alt="Slide 3">
+                    <img src="hardware/A neo red and black pc cabinet without any hardware attached in white background.png" alt="Slide 4">
+                    <img src="hardware/a processor with an upper metal lid in neo red and black on a white background.png" alt="Slide 5">
+                    <img src="hardware/neon red and black empty PC cabinet.png" alt="Slide 6">
+                    <img src="hardware/PSU in full mate black on a white background.png" alt="Slide 7">
+                    <img src="hardware/realistic looking M.2 NVMe SSD in neon red and black colors on a white background.png" alt="Slide 8">
+                    <!-- Add more images as needed -->
+                </div>
+                
+            </div>
+        </section>
+        <section id="intro" style="display: flex; align-items: center;">
+            <div>
+                <h1>Welcome to BUILD MY RIG</h1>
+                <p>🛠️ Unlock the full potential of your gaming and computing experience with BUILD MY RIG – your ultimate destination for premium PC components and accessories. Our mission is to provide enthusiasts, gamers, and professionals with top-tier products that deliver exceptional performance, reliability, and style.</p>
+                <p>💻 <strong>Your Dream Build, Your Way</strong></p>
+                <p>At BUILD MY RIG, we believe in empowering you to create the perfect PC that meets your unique needs and desires. With our extensive selection of high-quality parts, including CPUs, GPUs, motherboards, RAM, storage solutions, and more, you're just a few clicks away from building your dream rig. Our user-friendly platform makes it easy to browse, compare, and purchase the best components for your custom setup.</p>
+                <p><strong>Why Choose BUILD MY RIG?</strong></p>
+                <ul>
+                    <li>🌟 <strong>Expert Recommendations:</strong> Our team of experts is dedicated to helping you make informed decisions. From detailed product descriptions to insightful reviews, we provide all the information you need to choose the right parts.</li>
+                    <li>🔍 <strong>Compatibility Checker:</strong> Worried about whether your selected components will work together? Our Compatibility Checker ensures that every piece fits perfectly, eliminating the guesswork.</li>
+                    <li>💰 <strong>Exclusive Deals:</strong> Enjoy competitive prices and exclusive offers on top brands, making it easier than ever to get the best value for your money.</li>
+                    <li>🤝 <strong>Customer Support:</strong> Our friendly and knowledgeable customer support team is always here to assist you with any questions or concerns, ensuring a seamless shopping experience.</li>
+                </ul>
+                <p><strong>Join Our Community</strong></p>
+                <p>Become a part of our growing community of PC enthusiasts and gamers. Share your builds, get advice, and stay updated on the latest trends and technologies. At BUILD MY RIG, we're more than just a store – we're a community dedicated to the art and science of PC building.</p>
+                <p>🌟 Start your journey with BUILD MY RIG today, and take the first step towards creating the ultimate PC that reflects your passion and creativity.</p>
+            </div>
+            
+        </section>
+
+        <section id="products">
+            <!-- Your product listings -->
+            <h2>Featured Products</h2>
+            <div class="product-carousel">
+                <!-- Product carousel or grid -->
+                <!-- Example: <div class="product-card">Product 1</div> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BMR Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product.js"></script>
+</body>
+
+</html>

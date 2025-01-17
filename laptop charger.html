@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIO cooler</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            background-image: url('phone charger/_04ec3e13-1ac3-4879-8918-1687df0c703b.jpeg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+            0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+            0 0 20px rgb(255, 0, 0), /* Pink shadow */
+            0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+                
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home<i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">AIO</span> 
+                    <span class="hover-effect">cooler</span> 
+                </h2>
+                <div>
+                <button class="add-to-cart" data-name="Laptop charger" data-price="30" >Add to Cart</button>
+                </div>    
+            </div>
+            <button id="prevButton" class="slideshow-button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                
+                <div class="slides-container">
+                    <img src="laptop charger/a-photo-of-a-premium-aio-cooler-in-black_oTpE8OQRS2SfIToYcnyzPw_7jlEQGAfRc2WBi5eV4A06w.jpeg" alt="Slide 1">
+                    <img src="laptop charger/a-photo-of-a-premium-all-in-one-aio-cool_-WMcDzCVRZGvkUIzAJNhsg_7jlEQGAfRc2WBi5eV4A06w.jpeg" alt="Slide 2">
+                    <img src="laptop charger/a-photo-of-a-premium-all-in-one-aio-cpu-_vsoKb8LmQWKMK8vCnmHWkg_7jlEQGAfRc2WBi5eV4A06w.jpeg" alt="Slide 3">
+                    
+                    
+                    <!-- Add more images as needed -->
+                </div>
+                
+                
+            </div>
+            <button id="nextButton" class="slideshow-button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+        
+
+        <section id="intro" >
+            <div>
+                <h1>❄️ Performance Perfected: Advanced AIO Coolers</h1>
+                <p>🌟 Redefine cooling with our advanced All-In-One (AIO) liquid coolers – the perfect blend of performance, reliability, and sleek design for the ultimate PC experience. 🖥️</p>
+                <p>❄️ Engineered for superior heat dissipation, our AIO coolers ensure efficient and quiet operation, even during the most intense workloads. With optimized radiator airflow and high-pressure pumps, your CPU stays cool and performs at its peak, whether you're gaming, editing, or overclocking. ⚡</p>
+                <p>💡 Add style to substance with vibrant, customizable RGB lighting, designed to complement any setup. The compact, durable design offers easy installation and fits seamlessly into any build, making it ideal for enthusiasts and professionals alike. 🔧</p>
+                <p>🔒 Safety meets innovation with advanced features like leak-proof tubing, anti-vibration mounts, and a robust cooling system designed to last. Rest assured, your hardware is protected under even the most demanding conditions. 🚨</p>
+                <p>🌐 Elevate your PC's performance with an AIO cooler that combines cutting-edge technology and precision craftsmanship. Step into the future of cooling, and enjoy the perfect balance of efficiency and aesthetics. 💻</p>
+                <p>🚀 Cool smarter. Perform better. Choose our advanced AIO cooler today. ❄️</p>
+            </div>
+                     
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product1.js"></script>
+    <script src="review.js"></script>
+    <section>
+
+        <p style="text-align: center;">&copy; 2024 BMR Store. All rights reserved.</p>
+
+        
+    </section>
+    
+    
+</body>
+
+</html>

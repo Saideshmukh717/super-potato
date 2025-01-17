@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLEVER</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            background-image: url('lamp/_4f4c7085-2ce7-40c9-a37f-a26ca1c998ef.jpeg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+            0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+            0 0 20px rgb(255, 0, 0), /* Pink shadow */
+            0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+                
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home<i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">RGB</span> 
+                    <span class="hover-effect">RAM</span> 
+                </h2>
+                <div>
+                <button class="add-to-cart" data-name="Lamp" data-price="30" >Add to Cart</button>
+                </div>    
+            </div>
+            <button id="prevButton" class="slideshow-button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                
+                <div class="slides-container">
+                    <img src="lamp/a-photo-of-a-computer-ram-module-with-rg_teVWNtHqTImIjhKn77PXKQ_x0ThJ2enQzukMw9HV-4Zww.jpeg" alt="Slide 1">
+                    <img src="lamp/a-photo-of-a-computer-ram-random-access-_Pk0Krg1IR7KIZH-bfI3wIA_x0ThJ2enQzukMw9HV-4Zww.jpeg" alt="Slide 2">
+                    <img src="lamp/a-photo-of-rgb-computer-ram-on-a-black-b_2qWlMIahTSWufXJ1qtUsiw_x0ThJ2enQzukMw9HV-4Zww.jpeg" alt="Slide 3">
+                    <img src="lamp/a-photo-of-rgb-computer-ram-on-a-black-b_axZQJbDERAORkPBntZS50Q_x0ThJ2enQzukMw9HV-4Zww.jpeg" alt="Slide 4">
+                    
+                    <!-- Add more images as needed -->
+                </div>
+                
+                
+            </div>
+            <button id="nextButton" class="slideshow-button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+        
+
+        <section id="intro" >
+            <div>
+                <h1>Illuminating Brilliance: Clever Smart Lamp</h1>
+                <p>Embark on a journey of enlightenment with Clever's revolutionary smart lamp – a beacon of style, innovation, and functionality that transforms any space into a sanctuary of illumination and inspiration. 💡</p>
+                <p>Experience the perfect balance of form and function as you bask in the warm, inviting glow of Clever's smart lamp. Crafted from premium materials and exquisitely designed to complement any decor, our lamp is more than just a source of light – it's a work of art that enhances the ambiance of your home or office with effortless elegance. ✨</p>
+                <p>But what truly sets Clever's smart lamp apart is its advanced technology and intuitive features. With customizable brightness levels, color temperatures, and lighting modes, you have the power to tailor your lighting experience to suit your mood, task, or time of day. From energizing daylight to soothing moonlight, our lamp adapts to your needs with seamless precision. 🌙</p>
+                <p>Enhance your productivity and well-being with Clever's smart lamp, equipped with innovative features such as built-in timers, motion sensors, and voice-control compatibility. Whether you're working late into the night, unwinding with a good book, or simply creating the perfect ambiance for a dinner party, our lamp effortlessly adapts to your lifestyle, making every moment brighter and more memorable. 🌟</p>
+                <p>Step into a world where illumination meets inspiration, where technology enhances creativity, and where every room becomes a canvas for self-expression. Join the ranks of those who dare to dream, those who refuse to settle for the ordinary, and those who recognize that greatness lies in the details. Illuminate your world with Clever's smart lamp – where brilliance knows no bounds. 💫</p>
+                <p>Illuminate brilliance. Choose Clever.</p>
+            </div>
+            
+            
+            
+            
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product1.js"></script>
+    <script src="review.js"></script>
+    <section>
+
+        <p style="text-align: center;">&copy; 2024 BMR Store. All rights reserved.</p>
+
+        
+    </section>
+    
+    
+</body>
+
+</html>

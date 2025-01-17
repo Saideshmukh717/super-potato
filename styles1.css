@@ -1,0 +1,326 @@
+/* Styles for header, footer, and modal */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202020; /* Fallback color */
+   
+    color: white;
+    animation: scrollBackground 60s linear infinite;
+    
+}
+
+@keyframes scrollBackground {
+    from {
+        background-position-y: 0; /* Start from the top */
+    }
+    to {
+        background-position-y: calc(100% - 100vh); /* Scroll to the bottom */
+    }
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(27, 26, 26, 0), rgb(0, 0, 0));
+
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styles for the icons */
+li a i {
+    margin-left: 5px; /* Adjust spacing as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    color: rgba(255, 255, 255, 0.5); /* Set color to semi-transparent white */
+}
+
+/* Style for the search bar */
+.search-container {
+    margin-top: flex;
+    text-align: center;
+    background-color: #333; /* Dark background color */
+    padding: 4px; /* Add padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+
+
+/* Define styles for the #welcome container */
+#welcome {
+    background-color: rgba(7, 7, 7, 0.67); /* Semi-transparent black */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}  
+
+#intro {
+    background-color: rgba(7, 7, 7, 0.67); /* Semi-transparent black */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#contact1 {
+    background-color: rgba(7, 7, 7, 0.67); /* Semi-transparent black */
+    margin: 0.5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact1 h2 {
+    margin-bottom: 20px;
+}
+
+#contact1 p {
+    margin-bottom: 20px;
+}
+
+#contact1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact1 ul li {
+    margin-bottom: 10px;
+}
+
+#contact1 ul li:before {
+    content: "\2022"; /* Bullet character */
+    color: #0c0c0cb6;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#contact1 ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.727); /* Semi-transparent black */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe21;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #abababd0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #5c5a5a2f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #555555aa;
+    border: #333;
+    border-color: #ccc;
+    color: #c3b6b6;
+    border: none;
+    width: 500px;
+    padding: 16px 32px;
+    border-radius: 15px;
+    margin: 30px;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #121212;
+    box-shadow: 
+    0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+    0 0 20px rgb(255, 0, 0), /* Pink shadow */
+    0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides-container img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent 200%);
+    z-index: 2;
+}
+
+.slides-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    z-index: 1;
+    pointer-events: none; /* Ensure the gradient doesn't block mouse events */
+    border-radius: 50px;
+}
+
+.image-slider:hover{
+    border-radius: 50px;
+    box-shadow: 
+    0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+    0 0 20px rgb(255, 0, 0), /* Pink shadow */
+    0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+}
+.slideshow-button {
+    background-color: transparent; /* Make the background transparent */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #ffffff; /* Set the color of the icon */
+    margin-right: 10px; /* Add margin to separate from other elements */
+}
+
+.slideshow-button:hover {
+    color: #ffa500; /* Change icon color on hover */
+}
+#reviews {
+    padding: 20px;
+    background-color: #0c0c0cd1;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#review-form {
+    margin-top: 20px;
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#review-form input[type="text"],
+#review-form input[type="number"],
+#review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    background-color: #292727; /* Change to the desired color */
+    color: white;
+}
+
+
+#review-form button {
+    background-color: #201f1f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#review-form button:hover {
+    background-color: #3a1010;
+}
+
+/* Focus style */
+#review-form input:focus,
+#review-form textarea:focus {
+    outline: 2px solid ;
+    border-color: #b30045; /* Example color */
+    box-shadow: 0 0 5px rgba(47, 11, 23, 0.5); /* Example shadow */
+}

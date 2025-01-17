@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSD</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            background-image: url('laptop cover/_1bc5903c-a73b-4274-b955-9a6311a50c67.jpeg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+            0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+            0 0 20px rgb(255, 0, 0), /* Pink shadow */
+            0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+                
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home<i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">SSD</span> 
+                    <span class="hover-effect">512gb</span> 
+                </h2>
+                <div>
+                <button class="add-to-cart" data-name="Laptop cover" data-price="30" >Add to Cart</button>
+                </div>    
+            </div>
+            <button id="prevButton" class="slideshow-button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                
+                <div class="slides-container">
+                    <img src="laptop cover/a-photo-of-a-premium-ssd-drive-placed-on_AKAgisMxSbaSVaTHZrrniA_-rHnz-zkS4C4pBpd4i7_qA.jpeg" alt="Slide 1">
+                    <img src="laptop cover/a-photo-of-a-premium-ssd-on-a-black-back_wS-5CibmQPGFeVjsD-z12Q_-rHnz-zkS4C4pBpd4i7_qA.jpeg" alt="Slide 2">
+                    <img src="laptop cover/a-photo-of-a-premium-ssd-on-a-black-drop_xNDeuvJ8Q9CQ-nfKBg1TKw_-rHnz-zkS4C4pBpd4i7_qA.jpeg" alt="Slide 3">
+                    <img src="laptop cover/a-photo-of-a-premium-ssd-solid-state-dri_qfGf2lbCSzm_4LPpLJgMVQ_-rHnz-zkS4C4pBpd4i7_qA.jpeg" alt="Slide 4">
+                    
+                    <!-- Add more images as needed -->
+                </div>
+                
+                
+            </div>
+            <button id="nextButton" class="slideshow-button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+        
+
+        <section id="intro" >
+            <div>
+                <h1>⚡ Speed Redefined: High-Performance SSDs</h1>
+                <p>🌟 Upgrade your system with our state-of-the-art Solid State Drives (SSDs) – the ultimate solution for blazing-fast performance, unmatched reliability, and seamless computing. 💻</p>
+                <p>🚀 Experience lightning-fast boot times, rapid file transfers, and smoother multitasking with our SSDs, built on cutting-edge NAND technology. Designed to handle demanding workloads, they deliver exceptional read/write speeds to keep your system running at peak efficiency. 📂</p>
+                <p>💡 Compact and durable, our SSDs are optimized for compatibility with laptops, desktops, and gaming rigs. Whether you're editing videos, gaming, or managing large files, our SSDs offer the reliability and performance you need. 🎮</p>
+                <p>🔒 Built with advanced features like wear-leveling technology and error correction, our SSDs ensure data integrity and durability over time. Protect your files and enjoy peace of mind with storage you can depend on. 🔐</p>
+                <p>🌐 Upgrade to a new era of storage and experience the speed, efficiency, and dependability that transforms your workflow. With our SSDs, every operation becomes a breeze, giving you the power to achieve more. 🌟</p>
+                <p>🚀 Speed up. Power through. Choose our high-performance SSDs today. ⚡</p>
+            </div>
+            
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product1.js"></script>
+    <script src="review.js"></script>
+    <section>
+
+        <p style="text-align: center;">&copy; 2024 BMR Store. All rights reserved.</p>
+
+        
+    </section>
+    
+    
+</body>
+
+</html>

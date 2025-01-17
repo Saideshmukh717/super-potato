@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUILD MY RIG</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            background-image: url(hardware/neon\ red\ and\ black\ empty\ PC\ cabinet.png);
+            background-color: rgb(26, 0, 0);
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+            0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+            0 0 20px rgb(255, 0, 0), /* Pink shadow */
+            0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+                
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home<i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">Pre Builds </span> 
+                    <span class="hover-effect"></span> 
+                </h2>
+                <div>
+                <button class="add-to-cart" data-name="Headphones" data-price="30" >Add to Cart</button>
+                </div>    
+            </div>
+            <button id="prevButton" class="slideshow-button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                
+                <div class="slides-container">
+                    <img src="hardware/neon red and black empty PC cabinet.png" alt="Slide 1">
+                    <img src="headphones/_5682cb97-d7d7-4c29-859b-96b4e9081307.jpeg" alt="Slide 2">
+                    <img src="headphones/_81548661-3374-420a-9a50-f6aa3f994789.jpeg" alt="Slide 3">
+                    <img src="headphones/_f92e3726-1e89-45e3-ba5f-9e5bd5c49caa.jpeg" alt="Slide 4">
+                    
+                    <!-- Add more images as needed -->
+                </div>
+                
+                
+            </div>
+            <button id="nextButton" class="slideshow-button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+        
+
+        <section id="intro" >
+            <div>
+                <h1>Neon Red and Black Empty PC Cabinet</h1>
+                <p>🚀 <strong>Unleash your gaming potential</strong> with our striking Neon Red and Black PC Cabinet. This sleek, minimalistic case is designed to turn heads while delivering unparalleled performance. Perfect for PC enthusiasts and gamers, it offers ample space for all your high-end components, ensuring optimal airflow and efficient heat dissipation. 💨</p>
+                <p>Crafted with a robust metal frame and an eye-catching neon red edge, this cabinet blends durability with style. The spacious interior and smart cable management system make assembly a breeze, while its minimalist design ensures your setup remains clutter-free. Ready to house your dream build, this PC cabinet is not just a container—it's a statement piece. 🖥️</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>🌟 <strong>Striking Design:</strong> Neon red accents on a sleek black frame for a bold, modern look.</li>
+                    <li>🛠️ <strong>Spacious Interior:</strong> Accommodates various motherboard sizes, GPU setups, and cooling solutions.</li>
+                    <li>❄️ <strong>Efficient Airflow:</strong> Optimized for superior cooling with multiple fan mounts and ventilation points.</li>
+                    <li>🧹 <strong>Easy Cable Management:</strong> Keep your build clean and organized with a comprehensive cable routing system.</li>
+                    <li>🏗️ <strong>Durable Construction:</strong> Built to last with premium materials and a sturdy metal frame.</li>
+                </ul>
+                <p>Transform your PC build into a visual masterpiece with the Neon Red and Black PC Cabinet. Elevate your gaming experience today! 🎮</p>
+            </div>
+            
+            
+            
+            
+            
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product1.js"></script>
+    <script src="review.js"></script>
+    <section>
+
+        <p style="text-align: center;">&copy; 2024 BMR Store. All rights reserved.</p>
+
+        
+    </section>
+    
+    
+</body>
+
+</html>

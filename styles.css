@@ -1,0 +1,442 @@
+/* Styles for header, footer, and modal */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202020; /* Fallback color */
+    background-image: url('background/dark%20toned%20tech%20accessories%20website%20background.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    animation: scrollBackground 60s linear infinite;
+}
+
+@keyframes scrollBackground {
+    from {
+        background-position-y: 0; /* Start from the top */
+    }
+    to {
+        background-position-y: calc(100% - 100vh); /* Scroll to the bottom */
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(27, 26, 26, 0), rgb(0, 0, 0));
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Styles for the icons */
+li a i {
+    margin-left: 5px; /* Adjust spacing as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    color: rgba(255, 255, 255, 0.5); /* Set color to semi-transparent white */
+}
+
+/* Style for the search bar */
+.search-container {
+    margin-top: flex;
+    text-align: center;
+    background-color: #333; /* Dark background color */
+    padding: 4px; /* Add padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+.search-input {
+    padding: 8px 16px;
+    border: 1px solid #555; /* Darker border color */
+    border-radius: 20px; /* Rounded corners */
+    width: 700px; /* Adjust the width as needed */
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #444; /* Darker background color */
+    color: #ddd; /* Light text color */
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #1f201fcb;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: -76px; /* Adjust as needed to overlap with input */
+}
+
+.search-button:hover {
+    transform: translateY(1px);
+    background-color: #2f2f2f;
+    box-shadow: 
+    0 0 10px rgba(255, 94, 0, 0.5), /* Orange shadow */
+    0 0 20px rgba(255, 46, 113, 0.5), /* Pink shadow */
+    0 0 30px rgba(82, 46, 209, 0.5); /* Purple shadow */
+}
+
+/* Media queries for responsiveness */
+
+/* Adjust header and navigation for smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Adjust search bar for smaller screens */
+@media only screen and (max-width: 480px) {
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        margin-left: 0;
+    }
+}
+
+/* Adjust modal for smaller screens */
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/* Define styles for the #welcome container */
+#welcome {
+    background-color: rgba(7, 7, 7, 0.67); /* Semi-transparent black */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}  
+
+#intro {
+    background-color: rgba(7, 7, 7, 0.67); /* Semi-transparent black */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact1 {
+    background-color: rgba(7, 7, 7, 0.67); /* Semi-transparent black */
+    margin: 0.5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact1 h2 {
+    margin-bottom: 20px;
+}
+
+#contact1 p {
+    margin-bottom: 20px;
+}
+
+#contact1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact1 ul li {
+    margin-bottom: 10px;
+}
+
+#contact1 ul li:before {
+    content: "\2022"; /* Bullet character */
+    color: #0c0c0cb6;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#contact1 ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.727); /* Semi-transparent black */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe21;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.close {
+    color: #abababd0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #5c5a5a2f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#contact {
+    background-color: rgba(255, 255, 255, 0.096); /* Semi-transparent white */
+    padding: 40px;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact ul li:before {
+    content: "\2022"; /* Bullet character */
+    color: #0c0c0cb6;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#contact ul li:last-child {
+    margin-bottom: 0;
+}
+
+#products {
+    background-color: rgba(18, 18, 18, 0.685); /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#filter {
+    margin-bottom: 20px;
+    margin-top: flex;
+    text-align: left;
+    background-color: #00000097; /* Dark background color */
+    padding: 4px; /* Add padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+}
+
+#filter label {
+    color: #ccc;
+}
+
+#category {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-auto-rows: minmax(100px, auto); /* Automatic row height */
+    gap: 2px; /* Gap between items */
+}
+
+.product-card {
+    background-color: rgba(10, 9, 9, 0.508); /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 50px;
+    width: 60%; /* Set the width to fill the grid cell */
+    height: 75%; 
+    gap: 4px;
+    margin-bottom: 50px; /* Add some space between rows */
+    box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.5), /* Main shadow */
+        0 0 20px rgba(104, 104, 104, 0.956), /* Subtle shadow */
+        0 0 30px rgba(0, 0, 0, 0.2), /* Even subtler shadow */
+        0 0 40px rgba(0, 0, 0, 0.1), /* Faint shadow */
+        0 0 50px rgba(0, 0, 0, 0.05); /* Faintest shadow */
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 125%;
+    max-height: 275px;
+    margin-bottom: 10px;
+    border: 5px solid transparent; /* Set the border to transparent */
+    border-image: linear-gradient(to right, #a5a5a5, #3b3b3be6); /* Apply a gradient border */
+    border-image-slice: 1; /* Ensure the gradient spans the entire border */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.5), /* Main shadow */
+        0 0 20px rgba(0, 0, 0, 0.3), /* Subtle shadow */
+        0 0 30px rgba(0, 0, 0, 0.2), /* Even subtler shadow */
+        0 0 40px rgba(0, 0, 0, 0.1), /* Faint shadow */
+        0 0 50px rgba(0, 0, 0, 0.05); /* Faintest shadow */
+    transition: transform 0.3s ease; 
+}
+
+.product-card img:hover {
+    transform: translateY(-7px); /* Scale the image slightly on hover */
+    box-shadow: 
+    0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+    0 0 20px rgb(255, 0, 0), /* Pink shadow */
+    0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h3 {
+    margin-top: 0;
+}
+
+.add-to-cart {
+    background-color: #9e98985a;
+    color: #c3b6b6;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #55555500;
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides-container img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent 200%);
+    z-index: 2;
+}
+
+.slides-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    z-index: 1;
+    pointer-events: none; /* Ensure the gradient doesn't block mouse events */
+    border-radius: 50px;
+}
+
+.image-slider:hover{
+    border-radius: 50px;
+    box-shadow: 
+    0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+    0 0 20px rgb(255, 0, 0), /* Pink shadow */
+    0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+}

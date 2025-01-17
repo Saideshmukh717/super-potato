@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            background-image: url('phone charger/_9f535a35-c6f6-463b-a388-dafd4b0eee2e.jpeg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+            0 0 10px rgba(149, 2, 2, 0.293), /* Orange shadow */
+            0 0 20px rgb(255, 0, 0), /* Pink shadow */
+            0 0 30px rgba(28, 27, 33, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+                
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home<i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">Ryzen 9</span> 
+                    <span class="hover-effect">threadripper</span> 
+                </h2>
+                <div>
+                <button class="add-to-cart" data-name="Phone charger" data-price="30" >Add to Cart</button>
+                </div>    
+            </div>
+            <button id="prevButton" class="slideshow-button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                
+                <div class="slides-container">
+                    <img src="phone charger/a-photo-of-a-premium-processor-on-a-blac_krk6IE31Qj-Xr6WTBcuNmw_Ms79SUgdS9ijnsTwzmt6fg.jpeg" alt="Slide 1">
+                    <img src="phone charger/a-photo-of-a-premium-processor-on-a-blac_LLwjYZpzQO66pk8HyfYyEA_Ms79SUgdS9ijnsTwzmt6fg.jpeg" alt="Slide 2">
+                    <img src="phone charger/a-photo-of-a-premium-processor-on-a-blac_RGLL_BkYRqCBnzPHcfr6Jw_Ms79SUgdS9ijnsTwzmt6fg.jpeg" alt="Slide 3">
+                    
+                    
+                    
+                    <!-- Add more images as needed -->
+                </div>
+                
+                
+            </div>
+            <button id="nextButton" class="slideshow-button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+        
+
+        <section id="intro" >
+            <div>
+                <h1>Power Up in Style: Clever Phone Chargers</h1>
+                <p>Experience the epitome of convenience and elegance with Clever's innovative phone chargers – where cutting-edge technology, sleek design, and unmatched performance come together to revolutionize the way you power up your devices. 🔋</p>
+                <p>Prepare to be dazzled by the stylish sophistication of Clever's phone chargers, meticulously crafted from premium materials and designed to complement your modern lifestyle. Whether you're at home, in the office, or on the go, our chargers deliver lightning-fast charging speeds and uncompromising reliability, ensuring that your devices stay powered up whenever and wherever you need them. ⚡</p>
+                <p>But Clever's phone chargers are more than just functional accessories – they're expressions of your personal style and taste. Choose from a range of sleek designs and vibrant colors, each charger is as unique as you are, adding a touch of personality to your charging routine. With features like compact, portable designs and universal compatibility, our chargers are the perfect companion for your busy lifestyle. 💼</p>
+                <p>Experience the freedom of wireless charging with Clever's state-of-the-art chargers, engineered for speed, efficiency, and convenience. Simply place your device on the charging pad and watch as it powers up effortlessly – no cords, no hassle, just seamless charging at your fingertips. 🌟</p>
+                <p>Step into a world where power meets style, where convenience meets innovation, and where every charge is a moment of effortless elegance. Join the ranks of those who demand nothing but the best, and power up in style with Clever's phone chargers – where every charge is a statement of sophistication. 💫</p>
+                <p>Power up in style. Choose Clever.</p>
+            </div>
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product1.js"></script>
+    <script src="review.js"></script>
+    <section>
+
+        <p style="text-align: center;">&copy; 2024 CLEVER Store. All rights reserved.</p>
+
+        
+    </section>
+    
+    
+</body>
+
+</html>

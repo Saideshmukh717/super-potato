@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLEVER</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        body {
+            background-image: url('images/_02df0a8e-fc0a-4619-94b9-b3448ce5435d.jpeg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+    </style>
+    <style>
+        /* Define hover effect */
+        .hover-effect:hover {
+          text-shadow: 
+            0 0 10px rgba(255, 94, 0, 0.5), /* Orange shadow */
+            0 0 20px rgba(255, 46, 113, 0.5), /* Pink shadow */
+            0 0 30px rgba(82, 46, 209, 0.5); /* Purple shadow */
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="logo/Untitled design.png" alt="CLEVER" class="logo" style="max-width: 90px;">
+                
+            </a>
+            <h1>CLEVER</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home<i class="fas fa-home"></i></a></li>
+                <li><a href="clever.html">Products <i class="fas fa-box-open"></i></a></li>
+                <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" id="cart">Cart (<i class="fas fa-shopping-cart"></i> 0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" style="display: flex; align-items: center;">
+            
+            <div class="text-content" style="flex: 1;">
+                <h2 style="font-size: 100px; color: rgb(255, 255, 255);">
+                    <span class="hover-effect">Phone</span> 
+                    <span class="hover-effect">case</span> 
+                </h2>
+                <div>
+                <button class="add-to-cart" data-name="Phone Case" data-price="10" >Add to Cart</button>
+                </div>    
+            </div>
+            <button id="prevButton" class="slideshow-button" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <div class="image-slider" style="max-width: 700px; flex: 1;">
+                
+                <div class="slides-container">
+                    <img src="images/_02df0a8e-fc0a-4619-94b9-b3448ce5435d.jpeg" alt="Slide 1">
+                    <img src="images/_258929c8-e609-4faf-8e67-7f15e6c6aaf5.jpeg" alt="Slide 2">
+                    <img src="images/_45b789db-201c-45c3-8952-6990bdd56d63.jpeg" alt="Slide 3">
+                    <img src="images/_f43ae350-9eff-4ccb-952c-ccf8b3fb7908.jpeg" alt="Slide 4">
+                    <img src="images/_94506af7-bb91-4b25-adfe-27b147d80095.jpeg" alt="Slide 5">
+                    <img src="images/_d3e2d324-b184-447c-b2e5-4c52b8616e9b.jpeg" alt="Slide 6">
+                    <img src="images/_6b8f9323-0361-4f91-ae1e-1945d99a82e2.jpeg" alt="Slide 7">
+                    <img src="images/_afdba18d-501b-4e45-be7d-c7c429882a99.jpeg" alt="Slide 8">
+                    <!-- Add more images as needed -->
+                </div>
+                
+                
+            </div>
+            <button id="nextButton" class="slideshow-button" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </section>
+        
+
+        <section id="intro" >
+            <div>
+                <h1>Experience Perfection: Clever Phone Cases</h1>
+                <p>Prepare to elevate your smartphone experience to unprecedented levels with Clever's exquisitely crafted phone cases – the epitome of style, innovation, and functionality. 📱</p>
+                <p>Indulge in our meticulously curated collection, where each case is more than just a protective shield – it's a reflection of your personality and lifestyle. Crafted from the finest materials on Earth, including durable polycarbonate, flexible TPU, and sumptuous leather, our cases offer unparalleled protection against the rigors of daily life while exuding sophistication and charm. 💎</p>
+                <p>But what truly sets Clever phone cases apart is their unparalleled attention to detail and ingenuity. Designed with the modern user in mind, our cases boast a myriad of innovative features that seamlessly integrate into your daily routine. From built-in kickstands that revolutionize hands-free viewing to discreet card slots that elegantly house your essentials, every aspect of our cases is engineered to enhance your smartphone experience. 🚀</p>
+                <p>Picture yourself effortlessly navigating through your day, knowing that your device is safeguarded by Clever's advanced technology and impeccable craftsmanship. Whether you're conquering the boardroom, jet-setting across the globe, or simply making a fashion statement, our cases are the ultimate companion for the discerning individual who demands nothing but the best. 🔥</p>
+                <p>So why settle for mediocrity when you can embrace perfection? Join the ranks of those who dare to dream, those who refuse to compromise, and those who recognize that greatness lies in the details. Step into a world of unparalleled elegance and sophistication with Clever phone cases – where every touch, every glance, and every moment is a testament to your impeccable taste. 🌟</p>
+                <p>Experience perfection. Choose Clever.</p>
+            </div>
+            
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    
+
+    <!-- Include the cart modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Include JavaScript files at the end of the body -->
+    <script src="cart.js" defer></script>
+    <script src="product1.js"></script>
+    <script src="review.js"></script>
+    <section>
+
+        <p style="text-align: center;">&copy; 2024 CLEVER Store. All rights reserved.</p>
+
+        
+    </section>
+    
+    
+</body>
+
+</html>

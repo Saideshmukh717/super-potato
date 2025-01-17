@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUILD MY RIG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+
+<body>
+    <div id="slideshow-container"></div>
+    <header>
+        <div class="header-left">
+            <style>
+                /* CSS to apply rounded corners to the logo */
+                .logo {
+                    border-radius: 20px; /* Adjust the value to change the roundness */
+                }
+            </style>
+            <a href="home.html">
+                <img src="hardware/minimalistic PC case logo in red and black lines.png" alt="BUILD MY RIG" class="logo" style="max-width: 90px;">
+            </a>
+            <h1>BUILD MY RIG</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+            <button id="searchButton" class="search-button">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-box-open"></i> Products</a></li>
+                <li><a href="#contact" id="contact-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#" id="cart"><i class="fas fa-shopping-cart"></i> Cart (0)</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div id="filter">
+                <label for="category"><b>By Category:</b></label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="phone">Phone Accessories</option>
+                    <option value="laptop">Laptop Accessories</option>
+                    <option value="audio">Audio Accessories</option>
+                    <option value="desk">Desktop Accessories</option>
+                </select>
+            </div>
+            <div id="product-list"></div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any inquiries or support, please feel free to contact us:</p>
+        <ul>
+            <li>Email: clever108108@gmail.com</li>
+            <li>Phone: (+91) 9638953206</li>
+            <li>Address: 123 Tech Street, Cityville, Country</li>
+        </ul>
+        <!-- You can add a contact form here if needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BMR Store. All rights reserved.</p>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close button -->
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background/_126ea216-8900-4965-ac2f-c9650039e5db.jpeg');
+    background-size: cover;
+}
+
+.login-container {
+    margin-top: 500px;
+    position:relative center;
+    max-width: 350px;
+    max-height: 700px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.input-group {
+    padding: 20px;
+    
+    align-items: center;
+}
+
+.input-group label {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Transparent border */
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: #fff;
+}
+
+button {
+    position: absolute center;
+    padding: 10px 10px;
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background color */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Fully opaque background color on hover */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.login-container a {
+    color: #030303; /* Set link color to white */
+}
